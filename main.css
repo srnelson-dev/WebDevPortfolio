@@ -1,0 +1,111 @@
+h1 {
+    color: yellowgreen;
+}
+
+h2 {
+    color: darkslategray; 
+}
+
+h4 {
+    color: gray;
+}
+
+.common-header-style {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ul#main-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul#main-nav li {
+    float: left;
+}
+
+ul#main-nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul#main-nav li a:hover {
+    background-color: #111;
+}
+
+div[title] {
+    border: 1px solid black;
+    margin: 10px 0px;
+    padding: 5px;
+}
+
+div[title="website-info"] {
+    background-color: burlywood;
+}
+
+/* Descendant Combinator */
+ol.deploy-times li {
+    border: 1px dashed red;
+}
+
+/* Child Combinator */
+ol.deploy-times > li {
+    border: 1px solid blue;
+}
+
+/* Adjacent Sibling Combinator */
+h1 + p {
+    background-color: aqua;
+}
+
+/* General Sibling Combinator */
+h2 ~ p {
+    background-color: bisque;
+}
+
+/* Column Combinator */
+/* Experimental, doesn't currently work on all browsers */
+
+/* Pseudo-classes */
+/* :hover */
+
+/* :first-child */
+div[title=getting-started] ul li:first-child {
+    background-color: black;
+}
+
+/* :last-child */
+div[title=getting-started] ul li:last-child {
+    background-color: red;
+}
+
+/* :not() */
+/**:not(p) {
+    background-color: black;
+} */
+
+
+/* Pseudo Elements */
+
+/* ::before */
+p.pre-text::before {
+    content: "IMPORTANT >";
+    color: red;
+}
+
+/* ::after */
+p.post-text::after {
+    content: "< BORING";
+    color: brown;
+}
+
+/* ::selection */
+p::selection {
+    color: green;
+    background-color: red;
+}
